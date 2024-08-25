@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Time	Rainfall	Soil Moisture	Risk
+10000	 10		 10		 85
+20000	 50		 50		170
+30000	 80		 80		255
+40000	 20		 80		  0
+50000	 80		 20		  0
+60000	100		100		  0
+70000	  0		  0		  0
+$stop called at time : 70 ns : File "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sim_1/new/fuzzy_tb.v" Line 63
