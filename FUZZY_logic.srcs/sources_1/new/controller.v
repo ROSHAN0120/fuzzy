@@ -4,8 +4,8 @@ module controller(
     input wire [7:0] data_bus,    // 8-bit input for soil moisture (0 to 100)
     input ss,
     output ef1,
-    output rain_w,
-    output soil_w
+    output [7:0]rain_w,
+    output [7:0]soil_w
     );
     
     reg [7:0]r1;

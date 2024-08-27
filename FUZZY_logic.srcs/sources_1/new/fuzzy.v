@@ -44,7 +44,7 @@ module fuzzy(
     endfunction
 
     // Rainfall fuzzy sets
-    always @(ef) begin
+    always @(posedge clk) begin
         $display("rain: %d",rain);
         $display("soil: %d",soil);
         if (!rst_n)begin
