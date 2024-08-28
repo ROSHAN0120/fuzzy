@@ -1,64 +1,80 @@
 Time resolution is 1 ps
-efr :	x
-rain:   z
-soil:   z
-efr :	x
-rain:   z
-soil:   z
-25000	  0	 1
-efr :	x
-rain:   z
-soil:   z
-35000	 10	 2
-efr :	0
-rain:   z
-soil:   z
-45000	 10	 1
-efr :	0
-rain:   z
-soil:   z
-55000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-65000	  0	 1
-efr :	0
-rain:   z
-soil:   z
-75000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-85000	 20	 1
-efr :	1
-rain:   z
-soil:   z
-95000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-105000	 20	 1
-efr :	1
-rain:   z
-soil:   z
-115000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-125000	 20	 1
-efr :	1
-rain:   z
-soil:   z
-135000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-145000	 20	 1
-efr :	1
-rain:   z
-soil:   z
-155000	 20	 2
-efr :	0
-rain:   z
-soil:   z
-$stop called at time : 160 ns : File "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sim_1/new/fuzzy_tb.v" Line 96
+rain:   x
+soil:   x
+enable: x
+rain:   x
+soil:   x
+enable: x
+rain:   x
+soil:   x
+enable: x
+rain:   x
+soil:   x
+enable: 0
+rain:   x
+soil:   x
+enable: 0
+rain:   x
+soil:   x
+enable: 0
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 1
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 0
+rain:  80
+soil:  80
+enable: 1
+$stop called at time : 170 ns : File "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sim_1/new/fuzzy_tb.v" Line 96

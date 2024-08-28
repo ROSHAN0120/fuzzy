@@ -35,11 +35,12 @@ module tb_simple_fuzzy_logic;
 //        $display("Time\tRainfall\tSoil Moisture\tRisk");
 
         // Test Case 1: Low rainfall, low soil moisture
-        data_bus = 10;
-         ss = 0;#20;
-        data_bus = 20;
+        #10; ss = 0;
+        data_bus = 80;
+        #30;
         
-        #20;ss = 1;
+        #10;ss = 1; 
+        data_bus = 80;
         #100;
         //#10;
 //        $display("%0t\t%d\t\t%d\t\t%d", $time, rain_fall, soil_moisture, risk);
@@ -49,7 +50,6 @@ module tb_simple_fuzzy_logic;
 //        soil_moisture = 50;
 //        ss = 0;#10;
 //        ss = 1;#10;
-//        #10;
 //        $display("%0t\t%d\t\t%d\t\t%d", $time, rain_fall, soil_moisture, risk);
 
 //        // Test Case 3: High rainfall, high soil moisture
