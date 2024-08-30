@@ -1,12 +1,12 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Wed Aug 28 06:56:30 2024
+| Date         : Fri Aug 30 22:24:20 2024
 | Host         : LAPTOP-10C3B32R running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
-| Device       : xc7z010iclg225-1L
-| Speed File   : -1L
+| Device       : xc7z020clg484-1
+| Speed File   : -1
 | Design State : Fully Routed
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -23,14 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 134
-+-----------+------------------+--------------------------------+------------+
-| Rule      | Severity         | Description                    | Violations |
-+-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 37         |
-| TIMING-20 | Warning          | Non-clocked latch              | 96         |
-| LATCH-1   | Advisory         | Existing latches in the design | 1          |
-+-----------+------------------+--------------------------------+------------+
+             Violations found: 53
++-----------+------------------+-----------------------------+------------+
+| Rule      | Severity         | Description                 | Violations |
++-----------+------------------+-----------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 53         |
++-----------+------------------+-----------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -219,489 +217,84 @@ Non-clocked sequential cell
 The clock pin controller/s2_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[0] cannot be properly analyzed as its control pin fuzzy/denominator_reg[0]/G is not reached by a timing clock
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[1] cannot be properly analyzed as its control pin fuzzy/denominator_reg[1]/G is not reached by a timing clock
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[2] cannot be properly analyzed as its control pin fuzzy/denominator_reg[2]/G is not reached by a timing clock
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[3] cannot be properly analyzed as its control pin fuzzy/denominator_reg[3]/G is not reached by a timing clock
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[4] cannot be properly analyzed as its control pin fuzzy/denominator_reg[4]/G is not reached by a timing clock
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[5] cannot be properly analyzed as its control pin fuzzy/denominator_reg[5]/G is not reached by a timing clock
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#7 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[6] cannot be properly analyzed as its control pin fuzzy/denominator_reg[6]/G is not reached by a timing clock
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#8 Warning
-Non-clocked latch  
-The latch fuzzy/denominator_reg[7] cannot be properly analyzed as its control pin fuzzy/denominator_reg[7]/G is not reached by a timing clock
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/risk_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#9 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[0] cannot be properly analyzed as its control pin fuzzy/numerator_reg[0]/G is not reached by a timing clock
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#10 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[10] cannot be properly analyzed as its control pin fuzzy/numerator_reg[10]/G is not reached by a timing clock
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#11 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[11] cannot be properly analyzed as its control pin fuzzy/numerator_reg[11]/G is not reached by a timing clock
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#12 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[12] cannot be properly analyzed as its control pin fuzzy/numerator_reg[12]/G is not reached by a timing clock
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#13 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[13] cannot be properly analyzed as its control pin fuzzy/numerator_reg[13]/G is not reached by a timing clock
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#14 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[14] cannot be properly analyzed as its control pin fuzzy/numerator_reg[14]/G is not reached by a timing clock
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#15 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[15] cannot be properly analyzed as its control pin fuzzy/numerator_reg[15]/G is not reached by a timing clock
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-20#16 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[1] cannot be properly analyzed as its control pin fuzzy/numerator_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#17 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[2] cannot be properly analyzed as its control pin fuzzy/numerator_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#18 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[3] cannot be properly analyzed as its control pin fuzzy/numerator_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#19 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[4] cannot be properly analyzed as its control pin fuzzy/numerator_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#20 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[5] cannot be properly analyzed as its control pin fuzzy/numerator_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#21 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[6] cannot be properly analyzed as its control pin fuzzy/numerator_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#22 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[7] cannot be properly analyzed as its control pin fuzzy/numerator_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#23 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[8] cannot be properly analyzed as its control pin fuzzy/numerator_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#24 Warning
-Non-clocked latch  
-The latch fuzzy/numerator_reg[9] cannot be properly analyzed as its control pin fuzzy/numerator_reg[9]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#25 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[0] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#26 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[1] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#27 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[2] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#28 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[3] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#29 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[4] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#30 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[5] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#31 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[6] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#32 Warning
-Non-clocked latch  
-The latch fuzzy/rain_high_reg[7] cannot be properly analyzed as its control pin fuzzy/rain_high_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#33 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[0] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#34 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[1] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#35 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[2] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#36 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[3] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#37 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[4] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#38 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[5] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#39 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[6] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#40 Warning
-Non-clocked latch  
-The latch fuzzy/rain_low_reg[7] cannot be properly analyzed as its control pin fuzzy/rain_low_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#41 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[0] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#42 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[1] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#43 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[2] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#44 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[3] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#45 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[4] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#46 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[5] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#47 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[6] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#48 Warning
-Non-clocked latch  
-The latch fuzzy/rain_medium_reg[7] cannot be properly analyzed as its control pin fuzzy/rain_medium_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#49 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[0] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#50 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[1] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#51 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[2] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#52 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[3] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#53 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[4] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#54 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[5] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#55 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[6] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#56 Warning
-Non-clocked latch  
-The latch fuzzy/rule1_firing_strength_reg[7] cannot be properly analyzed as its control pin fuzzy/rule1_firing_strength_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#57 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[0] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#58 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[1] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#59 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[2] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#60 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[3] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#61 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[4] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#62 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[5] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#63 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[6] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#64 Warning
-Non-clocked latch  
-The latch fuzzy/rule2_firing_strength_reg[7] cannot be properly analyzed as its control pin fuzzy/rule2_firing_strength_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#65 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[0] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#66 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[1] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#67 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[2] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#68 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[3] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#69 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[4] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#70 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[5] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#71 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[6] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#72 Warning
-Non-clocked latch  
-The latch fuzzy/rule3_firing_strength_reg[7] cannot be properly analyzed as its control pin fuzzy/rule3_firing_strength_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#73 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[0] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#74 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[1] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#75 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[2] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#76 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[3] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#77 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[4] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#78 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[5] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#79 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[6] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#80 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_high_reg[7] cannot be properly analyzed as its control pin fuzzy/soil_moisture_high_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#81 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[0] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#82 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[1] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#83 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[2] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#84 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[3] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#85 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[4] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#86 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[5] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#87 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[6] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#88 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_low_reg[7] cannot be properly analyzed as its control pin fuzzy/soil_moisture_low_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#89 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[0] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#90 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[1] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#91 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[2] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#92 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[3] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#93 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[4] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#94 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[5] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#95 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[6] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#96 Warning
-Non-clocked latch  
-The latch fuzzy/soil_moisture_medium_reg[7] cannot be properly analyzed as its control pin fuzzy/soil_moisture_medium_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-LATCH-1#1 Advisory
-Existing latches in the design  
-There are 96 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin fuzzy/save_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 

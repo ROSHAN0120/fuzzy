@@ -70,8 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z010iclg225-1L
+create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -80,6 +81,8 @@ set_property webtalk.parent_dir E:/Internship_cusat/FUZZY_logic/FUZZY_logic.cach
 set_property parent.project_path E:/Internship_cusat/FUZZY_logic/FUZZY_logic.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part_repo_paths {C:/Users/roshan/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part avnet.com:zedboard:part0:1.4 [current_project]
 set_property ip_output_repo e:/Internship_cusat/FUZZY_logic/FUZZY_logic.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -98,13 +101,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/roshan/Downloads/sankar/new.xdc
+set_property used_in_implementation false [get_files C:/Users/roshan/Downloads/sankar/new.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top top -part xc7z010iclg225-1L
+synth_design -top top -part xc7z020clg484-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

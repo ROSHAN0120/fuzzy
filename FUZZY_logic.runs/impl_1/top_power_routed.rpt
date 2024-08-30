@@ -1,13 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date             : Wed Aug 28 06:56:30 2024
+| Date             : Fri Aug 30 22:24:21 2024
 | Host             : LAPTOP-10C3B32R running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
-| Device           : xc7z010iclg225-1L
+| Device           : xc7z020clg484-1
 | Design State     : routed
-| Grade            : industrial
+| Grade            : commercial
 | Process          : typical
 | Characterization : Production
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 12.892       |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 12.357       |
-| Device Static (W)        | 0.535        |
-| Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 0.0          |
-| Junction Temperature (C) | 125.0        |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 17.825 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 16.784                           |
+| Device Static (W)        | 1.041                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     6.862 |     2254 |       --- |             --- |
-|   LUT as Logic |     5.967 |     1311 |     17600 |            7.45 |
-|   CARRY4       |     0.879 |      310 |      4400 |            7.05 |
-|   BUFG         |     0.008 |        2 |        32 |            6.25 |
-|   Register     |     0.007 |      133 |     35200 |            0.38 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     5.073 |     1747 |       --- |             --- |
-| I/O            |     0.423 |       19 |        54 |           35.19 |
-| Static Power   |     0.535 |          |           |                 |
-| Total          |    12.892 |          |           |                 |
+| Slice Logic    |     8.326 |     2135 |       --- |             --- |
+|   LUT as Logic |     7.264 |     1298 |     53200 |            2.44 |
+|   CARRY4       |     1.046 |      310 |     13300 |            2.33 |
+|   Register     |     0.008 |       53 |    106400 |            0.05 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |     0.002 |        2 |     53200 |           <0.01 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |     6.423 |     1633 |       --- |             --- |
+| I/O            |     2.035 |       19 |       200 |            9.50 |
+| Static Power   |     1.041 |          |           |                 |
+| Total          |    17.825 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,26 +72,26 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       0.950 |    12.683 |      12.603 |      0.080 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.068 |       0.031 |      0.036 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    15.084 |      14.786 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.173 |       0.073 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.567 |       0.566 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.183 |       0.182 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       0.950 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.026 |       0.000 |      0.026 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.331 |       0.000 |      0.331 |       NA    | Unspecified | NA         |
-| Vccpaux   |       1.800 |     0.009 |       0.000 |      0.009 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
 
@@ -145,9 +146,9 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| top          |    12.357 |
-|   controller |     2.312 |
-|   fuzzy      |     9.571 |
+| top          |    16.784 |
+|   controller |     3.233 |
+|   fuzzy      |    11.436 |
 +--------------+-----------+
 
 
