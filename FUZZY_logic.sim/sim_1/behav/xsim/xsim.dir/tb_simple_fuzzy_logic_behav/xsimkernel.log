@@ -1,7 +1,4 @@
-Running: xsim.dir/tb_simple_fuzzy_logic_behav/xsimk.exe -simmode gui -wdb tb_simple_fuzzy_logic_behav.wdb -simrunnum 0 -socket 55392
+Running: xsim.dir/tb_simple_fuzzy_logic_behav/xsimk.exe -simmode gui -wdb tb_simple_fuzzy_logic_behav.wdb -simrunnum 0 -socket 56150
 Design successfully loaded
 Design Loading Memory Usage: 7240 KB (Peak: 7240 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 7780 KB (Peak: 7780 KB)
-Simulation CPU Usage: 46 ms
+Design Loading CPU Usage: 46 ms
