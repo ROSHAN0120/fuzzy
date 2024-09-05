@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sources_1/new/controller.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module controller
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sources_1/new/fuzzy.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fuzzy
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sources_1/new/top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Internship_cusat/FUZZY_logic/FUZZY_logic.srcs/sim_1/new/fuzzy_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_simple_fuzzy_logic

@@ -48,6 +48,14 @@ module tb_simple_fuzzy_logic;
         #10;ss = 1; 
         data_bus = 10;
         #100;
+        
+           #10; ss = 0;
+        data_bus = 50;
+        #30;
+        
+        #10;ss = 1; 
+        data_bus = 50;
+        #100;
 
         $stop;
     end
